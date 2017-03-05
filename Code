@@ -3,7 +3,12 @@
 ##### Setting up seating plan
 c = "ACDF"
 r = range(1,31)
-####x = [{ltr:"Empty" for ltr in c} for y in r]
 
-#####print(x)
+####### Creates the rows and columns with numbers and letters and adds Empty beside them
+
+x = [{str(y) + ltr:"Empty" for ltr in c} for y in r]
+
+print(x)
+
+###### Adds the first two rows as Donald Trump and Hillary Clinton
 
