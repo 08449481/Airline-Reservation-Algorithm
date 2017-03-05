@@ -1,5 +1,8 @@
 
 
+
+
+
 ##### Setting up seating plan
 c = "ACDF"
 r = range(1,31)
