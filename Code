@@ -6,9 +6,15 @@ r = range(1,31)
 
 ####### Creates the rows and columns with numbers and letters and adds Empty beside them
 
-x = [{str(y) + ltr:"Empty" for ltr in c} for y in r]
+x = [{str(y) + ltr:"Availible" for ltr in c} for y in r]
 
-print(x)
+########print(x)
+
+###### Test for correct number ofrows and Columns
+
+sum(1 for y in x)
+sum(sum(1 for z in y 
+
 
 ###### Adds the first two rows as Donald Trump and Hillary Clinton
 
