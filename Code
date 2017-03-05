@@ -1,5 +1,3 @@
-
-
 import sqlite3
 
 conn = sqlite3.connect("data.db")
@@ -7,9 +5,7 @@ conn = sqlite3.connect("data.db")
                             
 c = conn.cursor
 
-def create_table():
-    c.execute("CREATE TABLE IF NOT EXISTS stuff_to_plot(unix REAL, datestamp TEXT, keyword TEXT, value REAL)
-
-
-
-
+def read_from_db():
+    c.execute("SELECT * FROM data.db")
+    data = c.fetchall()
+    print (data)
