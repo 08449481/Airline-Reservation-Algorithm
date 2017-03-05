@@ -4,11 +4,22 @@
 c = "ACDF"
 r = range(1,31)
 
-####### Creates the rows and columns with numbers and letters and adds Empty beside them
 
-x = [{str(y) + ltr:"Empty" for ltr in c} for y in r]
+
+
+
+####### Creates the rows and columns with numbers and letters and adds "Avilible" beside them
+
+x = [{str(y) + ltr:"Availible" for ltr in c} for y in r]
 
 ######print(x)
+
+
+
+
+
+
+
 
 ######Check for correct rows 
 
@@ -18,7 +29,8 @@ x = [{str(y) + ltr:"Empty" for ltr in c} for y in r]
 
 """sum(1 for y in x)"""
 
-
+#################### Checks the total number of availible seating at the begining
+sum(sum(1 for z in y.values())for y in x)
 
 
 
@@ -29,4 +41,8 @@ x[0]["1A"] = "Hillary Clinton"
 x[0]["1C"] = "Donald Trump"
 
 #######print (x)
+
+
+
+
 
