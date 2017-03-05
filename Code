@@ -12,3 +12,7 @@ print(x)
 
 ###### Adds the first two rows as Donald Trump and Hillary Clinton
 
+x[0]["1A"] = "Hillary Clinton"
+x[0]["1C"] = "Donald Trump"
+print (x)
+
