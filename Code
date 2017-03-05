@@ -25,22 +25,48 @@ x = [{str(y) + ltr:"Availible" for ltr in c} for y in r]
 
 """sum(1 for y in c)"""
 
+
+#Rows = 4
+
 #########Check for correct column
 
 """sum(1 for y in x)"""
 
+#Column = 30
+
+
+
 #################### Checks the total number of availible seating at the begining
-sum(sum(1 for z in y.values())for y in x)
+"""sum(sum(1 for z in y.values())for y in x)"""
+
+#total availible seating = 120
 
 
 
 
-###### Adds the first two rows as Donald Trump and Hillary Clinton
+###### Adds the first two rows as Donald Trump and Hillary Clinton. 
 
 x[0]["1A"] = "Hillary Clinton"
 x[0]["1C"] = "Donald Trump"
 
 #######print (x)
+
+
+
+
+######### Test to Check that Both Donald Trump and Hillary Clinton have been assigned seats.
+sum(sum(1 for z in y.values()if z in "Availible")for y in x)
+
+#When run the total availible seating 118.
+
+#######print(x)
+
+# When printed each seat has empty except for 1A and 1C which have Donald and Hillary. 
+
+
+
+
+
 
 
 
